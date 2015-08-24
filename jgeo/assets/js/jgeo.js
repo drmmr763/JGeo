@@ -7,8 +7,15 @@
 var JGeo = {
 
     base: '',
+    status: false,
 
     init: function() {
+        // if we already have a location we don't need to do anything
+        if (this.getStatus() == true) {
+            return false;
+        }
+
+        // otherwise continue with getting the location
         if (geoPosition.init()) {
             geoPosition.getCurrentPosition(
                 this.success_callback,
@@ -54,7 +61,7 @@ var JGeo = {
                     longitude: longitude
                   }
         }).success(function(data){
-            console.log(data);
+            this.status = true;
         }).error(function(xhr, textStatus, errorThrown){
             console.log(xhr);
         }).always(function() {
@@ -81,5 +88,14 @@ var JGeo = {
      */
     getBase: function() {
         return this.base;
+    },
+
+    setStatus: function(status) {
+        this.status = status;
+        return this;
+    },
+
+    getStatus: function() {
+        return this.status;
     }
 };

@@ -41,8 +41,11 @@ class PlgSystemJGeo extends JPlugin
 
         $doc->addScript(Juri::root() . '/plugins/system/jgeo/assets/js/geoposition.js');
         $doc->addScript(Juri::root() . '/plugins/system/jgeo/assets/js/jgeo.js');
-        $doc->addScriptDeclaration('JGeo.init();');
         $doc->addScriptDeclaration('JGeo.setBase("' . JUri::root() . '")');
+        $doc->addScriptDeclaration('JGeo.setStatus(' . JFactory::getSession()->get('jgeo_position_status', false) . ')');
+        $doc->addScriptDeclaration('JGeo.init();');
+
+
     }
 
     /*

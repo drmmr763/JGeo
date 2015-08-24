@@ -11,6 +11,7 @@
     <description>PLG_SYSTEM_JGEO_XML_DESCRIPTION</description>
     <files>
         <filename plugin="jgeo">jgeo.php</filename>
+        <folder>assets</folder>
     </files>
     <languages>
         <language tag="en-GB">language/en-GB/en-GB.plg_system_jgeo.ini</language>

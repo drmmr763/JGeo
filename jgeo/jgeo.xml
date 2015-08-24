@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.0" type="plugin" group="system" method="upgrade">
+    <name>PLG_JGEO_NAME</name>
+    <author>Chad Windnagle</author>
+    <creationDate>August 2015</creationDate>
+    <copyright>(C) Chad Windnagle All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see	LICENSE.txt</license>
+    <authorEmail>drmmr763@gmail.com</authorEmail>
+    <authorUrl>www.chadwindnagle.com</authorUrl>
+    <version>3.0.0</version>
+    <description>PLG_SYSTEM_JGEO_XML_DESCRIPTION</description>
+    <files>
+        <filename plugin="jgeo">jgeo.php</filename>
+    </files>
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.plg_system_jgeo.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.plg_system_jgeo.sys.ini</language>
+    </languages>
+</extension>

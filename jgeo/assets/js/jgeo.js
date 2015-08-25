@@ -90,11 +90,21 @@ var JGeo = {
         return this.base;
     },
 
+    /*
+     * Set the status
+     *
+     * @param status boolean
+     */
     setStatus: function(status) {
         this.status = status;
         return this;
     },
 
+    /*
+     * Get Status
+     *
+     * @return boolean
+     */
     getStatus: function() {
         return this.status;
     }

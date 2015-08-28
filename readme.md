@@ -9,7 +9,7 @@ Uses geoposition.js: https://github.com/estebanav/javascript-mobile-desktop-geol
 Once geo data is found, it gets stored in JSession. This makes it accessible to any other component that wants to access it in Joomla. 
 
 ## Getting User Position
-
+```
 $session = JFactory::getSession();
 
 // check that the plugin has set the position

@@ -20,8 +20,8 @@ if ($session->get('jgeo_position_status', false)) {
     var_dump($position);
 
     // access the object data
-    $lat = $location->latitude;
-    $lng = $location->longitude;
+    $lat = $position->latitude;
+    $lng = $position->longitude;
 }
 
 ```

@@ -18,5 +18,10 @@ if ($session->get('jgeo_position_status', false)) {
     // the object will be an empty array if it hasn't been set as well
     $position = json_decode($session->get('jgeo_position'));
     var_dump($position);
+
+    // access the object data
+    $lat = $location->latitude;
+    $lng = $location->longitude;
 }
+
 ```

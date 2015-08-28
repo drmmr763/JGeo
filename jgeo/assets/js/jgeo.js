@@ -30,18 +30,16 @@ var JGeo = {
     },
 
     fallback: function() {
-        console.log('fallback');
+        // if all else fails and things go horribly wrong
+        // we can do something here
     },
 
     success_callback: function(p) {
-        console.log(p);
         JGeo.registerSessionLocation(p.coords.latitude, p.coords.longitude);
-
-        console.log();
     },
 
     error_callback: function(p) {
-        console.log(p);
+        // Eventually add some final fallback options
     },
 
     /*
